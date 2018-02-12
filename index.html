@@ -8,6 +8,7 @@
 
     <title>Whiskey Drop I Taste a new whiskey every month</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
 
 
 
@@ -48,15 +49,15 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
         <!-- Callout -->
         <div class="row">
             <div class="col-xs-12">
                 <section class="callout jumbotron text-center">
                     <h1>The finest whiskey delivered to your doorstep</h1>
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month. <s class="hidden-xs">€19.99</s><span class="visible-xs"><br></span><strong><mark>First one is for free!</mark></strong></p>
-                    <p><button class="btn btn-lg btn-success">Sign Up!</button></p>
+                    <p><button class="btn btn-lg btn-success" data-toggle='modal' data-target='#signUpModal'>Sign Up!</button></p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please drink responsibly.</small> </p>
                 </section>
             </div>
@@ -140,6 +141,46 @@
         </section>
         <!-- /.features -->
     </article>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Drink Whiskey Off A Babies Arse! Sign up now!!</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <p class="help-block">We'll <strong>NEVER</strong> share your email address with anyone (fact)</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordRepeat">Repeat Password</label>
+                            <input type="password" class="form-control" id="passwordRepeat" placeholder="Repeat Your Password">
+                        </div>
+                        <button type="submit" class="btn btn-success">Sign Up!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
